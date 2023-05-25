@@ -3,10 +3,15 @@ import { NFTButtons } from '../Buttons';
 import ethIcon from '../images/Etheriumicon.svg';
 const StyledETHCard = styled.div`
     
+    box-sizing: border-box;
+    padding-top: 1%;
+    text-align: center;
     border-radius: 12px;
     background-color: white;
-    width: 164px;
-    height: 167px;
+    width: 40%;
+    height: 40%;
+    margin-bottom: 2%;
+    margin-right: 2%;
      .title {
         color: #747475;
     }

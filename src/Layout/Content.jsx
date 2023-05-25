@@ -1,6 +1,20 @@
 import { ContentButton } from "./ContentButton";
 import { AuctionCard } from "./AuctionCard";
 import ApeLove from "../components/images/ape in love.svg";
+import Avatar from "../components/images/avatar.svg";
+import { ETHCard } from "../components/Cards";
+const fakeDataCreator = [
+    {
+        id:1,
+        name:"Michael Jordan",
+        account:"@jordan_"
+    },
+    {
+        id:2,
+        name:"John Tibao",
+        account:"@johnti60"
+    },
+]
 const Content = () => {
     return <>
         <div style={{
@@ -10,7 +24,8 @@ const Content = () => {
             float: 'right'
         }}>
         <div style={{width:'60%',
-            marginLeft:'2%'
+            marginLeft:'2%',
+            float:'left'
         }}>
         <div style={{
         backgroundColor: 'violet' 
@@ -51,11 +66,29 @@ const Content = () => {
                 justifyContent: 'space-around',
                 marginTop:'10%'
             }}>
-                <AuctionCard Image={ApeLove} Text="Ape in love" Likes="21.5K Likes" ></AuctionCard>
-                <AuctionCard Image={ApeLove} Text="Ape in love" Likes="21.5K Likes" ></AuctionCard>
-                <AuctionCard Image={ApeLove} Text="Ape in love" Likes="21.5K Likes"></AuctionCard>
-                <AuctionCard Image={ApeLove} Text="Ape in love" Likes="21.5K Likes"></AuctionCard>
+                <AuctionCard Image={ApeLove} Text="Ape in love" Likes="21.5K Likes" Avatar={Avatar} Account="@johnti60"></AuctionCard>
+                <AuctionCard Image={ApeLove} Text="Ape in love" Likes="21.5K Likes" Avatar={Avatar} Account="@johnti60"></AuctionCard>
+                <AuctionCard Image={ApeLove} Text="Ape in love" Likes="21.5K Likes" Avatar={Avatar} Account="@johnti60"></AuctionCard>
+                <AuctionCard Image={ApeLove} Text="Ape in love" Likes="21.5K Likes" Avatar={Avatar} Account="@johnti60"></AuctionCard>
             </div>
+        </div>
+        <div style={{
+            width:'35%',
+            float:'right',
+        }}>
+        <div style={{
+        display:'flex',
+        flexWrap: 'wrap',
+        marginTop:'5%'
+            }}><ETHCard title="Revenue" value="5.00" percent={12.3}></ETHCard>
+            <ETHCard title="Revenue" value="5.00" percent={12.3}></ETHCard>
+            <ETHCard title="Revenue" value="5.00" percent={12.3}></ETHCard>
+            <ETHCard title="Revenue" value="5.00" percent={12.3}></ETHCard>
+        </div>
+        <div style={{backgroundColor:'white',width:'82%',borderRadius:'16px'}}>
+            <span style={{fontWeight:400,fontSize:'24px',margin:'2% 50% 2% 2%'}}>Top Creator</span>
+            <span style={{fontWeight:500,fontSize:'16px',color:'#747475'}}>See All</span>
+        </div>
         </div>
         </div>
     </>
