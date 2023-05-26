@@ -6,7 +6,7 @@ const Searchbar = () => {
       <div style={{
         width:'75%',
         height:'25%',
-        backgroundColor: '#36BC4C',
+        backgroundColor: '#CAEAE6',
         float: 'left',
         boxSizing: 'border-box',
         paddingRight: '2%'

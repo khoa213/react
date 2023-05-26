@@ -3,6 +3,8 @@ import { AuctionCard } from "./AuctionCard";
 import ApeLove from "../components/images/ape in love.svg";
 import Avatar from "../components/images/avatar.svg";
 import { ETHCard } from "../components/Cards";
+import { Creator } from "./Creator";
+
 const fakeDataCreator = [
     {
         id:1,
@@ -14,13 +16,18 @@ const fakeDataCreator = [
         name:"John Tibao",
         account:"@johnti60"
     },
+    {
+        id:3,
+        name:"Teressa",
+        account:"@teressa"
+    }
 ]
 const Content = () => {
     return <>
         <div style={{
             width:'75%',
             height: '75%',
-            backgroundColor: '#36BC4C',
+            backgroundColor: '#CAEAE6',
             float: 'right'
         }}>
         <div style={{width:'60%',
@@ -86,8 +93,15 @@ const Content = () => {
             <ETHCard title="Revenue" value="5.00" percent={12.3}></ETHCard>
         </div>
         <div style={{backgroundColor:'white',width:'82%',borderRadius:'16px'}}>
+            <div>
             <span style={{fontWeight:400,fontSize:'24px',margin:'2% 50% 2% 2%'}}>Top Creator</span>
             <span style={{fontWeight:500,fontSize:'16px',color:'#747475'}}>See All</span>
+            </div>
+            <div>
+                {
+                    fakeDataCreator.map((item)=><Creator id={item.id} name={item.name} account={item.account}></Creator>)
+                }
+            </div>
         </div>
         </div>
         </div>
