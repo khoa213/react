@@ -43,10 +43,10 @@ const Content = () => {
         }}>
             Discover,create and sell your own NFT
         </div>
-        <ContentButton Width='128px' Height='46px' Text="Discover" BackGround="#FFFFFF" Radius="40px" 
-        TextColor="#5429FF" FontWeight={700} FontSize='16px' Margin='10px'></ContentButton>
-        <ContentButton Width='128px' Height='46px' Text="Create" BackGround="transparent" Radius="40px" 
-        TextColor="white" FontWeight={700} FontSize='16px' ></ContentButton>
+        <ContentButton width='128px' height='46px' Text="Discover" background="#FFFFFF" radius="40px" 
+        textcolor="#5429FF" FontWeight={700} fontsize='16px' margin='10px'></ContentButton>
+        <ContentButton width='128px' height='46px' Text="Create" background="transparent" radius="40px" 
+        textcolor="white" FontWeight={700} fontsize='16px' ></ContentButton>
         </div>
         <div>
             <div style={{fontSize:'24px',
@@ -58,14 +58,14 @@ const Content = () => {
             <div style={{float:'right',
             marginTop:'1%'
             }}>
-            <ContentButton Width='45px' Height='28px' Text="Art" BackGround="rgba(84, 41, 255, 0.1)" Radius="40px" 
-        TextColor="#5429FF" FontWeight={500} FontSize='14px' Margin="0px 0px 0px 10px"></ContentButton>
-        <ContentButton Width='45px' Height='28px' Text="Art" BackGround="transparent" Radius="40px" 
-        TextColor="#7A797D" FontWeight={500} FontSize='14px' Margin="0px 0px 0px 10px"></ContentButton>
-        <ContentButton Width='45px' Height='28px' Text="Art" BackGround="transparent" Radius="40px" 
-        TextColor="#7A797D" FontWeight={500} FontSize='14px' Margin="0px 0px 0px 10px"></ContentButton>
-        <ContentButton Width='45px' Height='28px' Text="Art" BackGround="transparent" Radius="40px" 
-        TextColor="#7A797D" FontWeight={500} FontSize='14px' Margin="0px 0px 0px 10px"></ContentButton>
+            <ContentButton width='45px' height='28px' Text="Art" background="rgba(84, 41, 255, 0.1)" radius="40px" 
+        textcolor="#5429FF" FontWeight={500} fontsize='14px' margin="0px 0px 0px 10px"></ContentButton>
+        <ContentButton width='45px' height='28px' Text="Art" background="transparent" radius="40px" 
+        textcolor="#7A797D" FontWeight={500} fontsize='14px' margin="0px 0px 0px 10px"></ContentButton>
+        <ContentButton width='45px' height='28px' Text="Art" background="transparent" radius="40px" 
+        textcolor="#7A797D" FontWeight={500} fontsize='14px' margin="0px 0px 0px 10px"></ContentButton>
+        <ContentButton width='45px' height='28px' Text="Art" background="transparent" radius="40px" 
+        textcolor="#7A797D" FontWeight={500} fontsize='14px' margin="0px 0px 0px 10px"></ContentButton>
             </div>
         </div>
             <div style={{display:'flex',

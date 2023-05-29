@@ -9,8 +9,23 @@ import Settings from '../components/images/Settings.svg';
 import Logo from '../components/images/Logo.svg';
 import SidebarShow from '../components/images/SidebarShow.svg';
 import { Menu } from '../pages/Home';
+import { NavLink } from "react-router-dom";
+import styled from "styled-components";
+const StyledSidebar = styled.div`
+    .active {
+    svg {
+      path {
+        stroke: #f30ee4;
+      }  
+    }
+    color: #f30ee4;
+    span {
+        color: #f30ee4;
+    }
+  }
+`;
 const Sidebar = () => {
-    return <>
+    return <StyledSidebar>
         
         <div style={{
             width: '25%',
@@ -22,13 +37,20 @@ const Sidebar = () => {
             marginTop: '20px',
             marginLeft: '20px'
         }}/>
+        <NavLink to="/">
         <Menu imageSource={Dashboard} menuOption="Dashboard"></Menu>
+        </NavLink>
+        <NavLink to="/login">
+        <Menu imageSource={Dashboard} menuOption="Login"></Menu>
+        </NavLink>
         <Menu imageSource={Market} menuOption="Market"></Menu>
         <Menu imageSource={ActiveBid} menuOption="Active Bids"></Menu>
+
         <p style={{fontWeight:700,
         fontSize:'12px',
         marginLeft: '5%'
         }}>Profile</p>
+
         <Menu imageSource={Portfolio} menuOption="My portfolio"></Menu>
         <Menu imageSource={Wallet} menuOption="Wallet"></Menu>
         <Menu imageSource={Favorite} menuOption="Favorites"></Menu>
@@ -37,6 +59,6 @@ const Sidebar = () => {
         marginTop: '5%'
         }}/>
         </div>
-    </>
+    </StyledSidebar>
 }
 export {Sidebar};

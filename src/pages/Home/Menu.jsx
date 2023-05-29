@@ -5,7 +5,7 @@ const Menu = ({imageSource,menuOption}) => {
             marginTop: '10px'
         }}><img src={imageSource} alt="" style={{
             marginRight: '10px'
-        }}/><span style={{color:'#7A797D',
+        }}/><span style={{
             fontSize: '16px'
         }}>{menuOption}</span></div>
     </>

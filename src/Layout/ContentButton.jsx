@@ -1,25 +1,25 @@
 import  styled  from "styled-components";
 const StyledButton = styled.button`
-  width: ${props => props.Width};  
-  height: ${props => props.Height};
-  background-color:${props => props.BackGround};
-  border-radius: ${props => props.Radius};
-  color: ${props => props.TextColor};
-  font-weight: ${props => props.FontWeight};
-  font-size : ${props => props.FontSize};
-  margin: ${props => props.Margin};
+  width: ${props => props.width};  
+  height: ${props => props.height};
+  background-color:${props => props.background};
+  border-radius: ${props => props.radius};
+  color: ${props => props.textcolor};
+  font-weight: ${props => props.Fontweight};
+  font-size : ${props => props.fontsize};
+  margin: ${props => props.margin};
 `;
-const ContentButton = ({Width,Height,BackGround,Radius,Text,TextColor,FontWeight,FontSize,Margin}) => {
+const ContentButton = ({width,height,background,radius,Text,textcolor,Fontweight,fontsize,margin}) => {
     return <>  
         <StyledButton 
-        Width={Width}
-        Height={Height}
-        BackGround={BackGround}
-        Radius={Radius}
-        TextColor={TextColor}
-        FontWeight={FontWeight}
-        FontSize={FontSize}
-        Margin={Margin}>{Text}</StyledButton>
+        width={width}
+        height={height}
+        background={background}
+        radius={radius}
+        textcolor={textcolor}
+        Fontweight={Fontweight}
+        fontsize={fontsize}
+        margin={margin}>{Text}</StyledButton>
         
     </>
 }

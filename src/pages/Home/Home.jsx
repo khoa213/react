@@ -1,6 +1,6 @@
 import { styled } from 'styled-components';
 import { ETHCard } from '../../components/Cards';
-
+import { Layout } from '../../Layout/Layout';
 const Home = () => {
     return <>
         {/* <div>
@@ -8,15 +8,11 @@ const Home = () => {
           <Menu imageSource={Market} menuOption="Market"></Menu>
         </div> */}
         
-        <div style={{
-          display: 'flex',
-          flexWrap: 'wrap'
-        }}>
-        <ETHCard title={"Revenue"} percent={12.3} value="5.00"></ETHCard>
-        <ETHCard title={"Spending"} percent={8.1} value="2.00"></ETHCard>
-        <ETHCard title={"Estimated"} percent={3.2} value="7.00"></ETHCard>
-        <ETHCard title={"Estimated"} percent={3.2} value="7.00"></ETHCard>
-        </div>
+        
+        <Layout>
+        
+        </Layout>
+        
         
     </>
 }

@@ -4,11 +4,12 @@ import { RedButton, BlueButton, NFTButtons } from './components/Buttons';
 import { Hello } from './Hello';
 import { Counter, Counter2 } from './Counter';
 import { styled } from 'styled-components';
- 
+
 import { Home } from './pages/Home';
-import { BrowserRouter, Routes,Route, Link, Outlet } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
 import { AboutUs } from './pages/About us';
 import { Layout } from './Layout/Layout';
+import { Loginpage } from './Layout/Loginpage';
 
 // const Title = styled.h1`
 //   color: red;
@@ -35,16 +36,13 @@ function Button() {
 function App() {
   return (
     <>
-    <Layout>
     <BrowserRouter>
-    
-      <Routes>
-        <Route path='/' element={<Home/>}></Route>
-        <Route path='/about-us' element={<AboutUs/>}></Route>
-      </Routes>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/login' element={<Loginpage />} />
+          </Routes>
+        </BrowserRouter>
       
-    </BrowserRouter>
-    </Layout>
     </>
   );
 }
